@@ -1,5 +1,4 @@
-def all_unique_tags(post):
-    tags = set()
-    for post in post:
-       tags.update(post["tags"])
-    return tags
+def second_largest(numbers):
+    # TODO: return the second largest DISTINCT number in `numbers`
+    unique = set(numbers)
+    return sorted(unique,reverse=True)[1]
