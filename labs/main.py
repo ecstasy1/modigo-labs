@@ -1,4 +1,8 @@
-def second_largest(numbers):
-    # TODO: return the second largest DISTINCT number in `numbers`
-    unique = set(numbers)
-    return sorted(unique,reverse=True)[1]
+def dedupe_preserve_order(items):
+  seen = set()
+  result =[]
+  for item in items:
+    if item not in seen:
+       seen.add(item)
+       result.append(item)
+  return result
