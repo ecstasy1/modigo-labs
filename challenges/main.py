@@ -1,5 +1,5 @@
-def replace_first(items, new_value):
-    if not items:
-      return ()
-
-    return (new_value,) + items[1:]
+def all_unique_tags(posts):
+    tags = set()
+    for post in posts:
+        tags.update(post["tags"])
+    return tags
